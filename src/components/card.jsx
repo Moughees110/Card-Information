@@ -126,7 +126,7 @@ export default function PaymentCard() {
         </h1>
         <p className="text-gray-500 text-sm sm:text-base">
           Ensure prompt order processing by using a valid credit card to
-          complete your purchase. Please note that payment is non-refundable.
+          complete your purchase.refundable.
         </p>
 
         {/* Card Type Selection */}
@@ -265,14 +265,14 @@ export default function PaymentCard() {
             {/* ZIP */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-1">
-                ZIP Code
+                Post Code
               </label>
               <input
                 type="text"
                 name="zip"
                 value={formData.zip}
                 onChange={handleChange}
-                placeholder="90210"
+                placeholder="e6 2dr"
                 maxLength={5}
                 className={`w-full border rounded-lg px-3 py-2 focus:outline-none ${
                   errors.zip
